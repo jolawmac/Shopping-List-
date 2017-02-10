@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2Ap-kc-tQc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Shopping List Table View Controller-->
+        <scene sceneID="Kvk-Qv-aof">
+            <objects>
+                <tableViewController id="bvW-V8-dMI" customClass="ShoppingListTableViewController" customModule="ShoppingList" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ytg-w4-J32">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="shoppingListCell" id="ycJ-Uk-6tA" customClass="ShoppingListTableViewCell" customModule="ShoppingList" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ycJ-Uk-6tA" id="TX9-cM-yQG">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOT-4o-qLC">
+                                            <rect key="frame" x="323.5" y="0.0" width="43.5" height="43.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="HOT-4o-qLC" secondAttribute="height" multiplier="1:1" id="11Q-Tt-7ZK"/>
+                                            </constraints>
+                                            <state key="normal" title="Button" image="incomplete"/>
+                                            <connections>
+                                                <action selector="checkboxTapped:" destination="ycJ-Uk-6tA" eventType="touchUpInside" id="kfg-xh-FcZ"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="caQ-ee-Trv">
+                                            <rect key="frame" x="8" y="8" width="315.5" height="27"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="caQ-ee-Trv" secondAttribute="bottom" id="QoJ-5e-w7l"/>
+                                        <constraint firstItem="caQ-ee-Trv" firstAttribute="top" secondItem="TX9-cM-yQG" secondAttribute="topMargin" id="RgD-lf-0fy"/>
+                                        <constraint firstItem="caQ-ee-Trv" firstAttribute="leading" secondItem="TX9-cM-yQG" secondAttribute="leadingMargin" id="Smd-Da-YL8"/>
+                                        <constraint firstAttribute="trailing" secondItem="HOT-4o-qLC" secondAttribute="trailing" constant="8" id="XT5-n2-jac"/>
+                                        <constraint firstItem="HOT-4o-qLC" firstAttribute="top" secondItem="TX9-cM-yQG" secondAttribute="top" id="c6i-Re-Dlt"/>
+                                        <constraint firstItem="HOT-4o-qLC" firstAttribute="leading" secondItem="caQ-ee-Trv" secondAttribute="trailing" id="ui8-vJ-jiR"/>
+                                        <constraint firstAttribute="bottom" secondItem="HOT-4o-qLC" secondAttribute="bottom" id="uig-rh-GiA"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="checkboxButton" destination="HOT-4o-qLC" id="hJO-0L-hAt"/>
+                                    <outlet property="shoppingListText" destination="caQ-ee-Trv" id="W6i-yt-0bE"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="bvW-V8-dMI" id="inA-rb-H0S"/>
+                            <outlet property="delegate" destination="bvW-V8-dMI" id="DkD-si-izj"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="cEB-io-IyD">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="b7q-Nz-sW5">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="bvW-V8-dMI" id="JnL-1Q-1L4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rag-u9-kwN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1037.5999999999999" y="246.02698650674665"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7sK-iA-0dq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2Ap-kc-tQc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3Bb-6T-FPq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bvW-V8-dMI" kind="relationship" relationship="rootViewController" id="e8T-rE-4AL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1cv-QH-boA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96.799999999999997" y="245.12743628185908"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="incomplete" width="512" height="512"/>
+    </resources>
+</document>
