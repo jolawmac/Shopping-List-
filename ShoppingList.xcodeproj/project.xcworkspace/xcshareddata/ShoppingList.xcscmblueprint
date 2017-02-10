@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DA7FE126AEEF1613FFD8AB90CFE3EDD07F12A535",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "DA7FE126AEEF1613FFD8AB90CFE3EDD07F12A535" : 9223372036854775807,
+    "1A6892CFB9C82E1E0280ED7BB5440086B7692F47" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0C5EDCAB-6307-4848-BA5C-BF44D2379136",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "DA7FE126AEEF1613FFD8AB90CFE3EDD07F12A535" : "ShoppingList\/",
+    "1A6892CFB9C82E1E0280ED7BB5440086B7692F47" : "..\/.."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ShoppingList",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ShoppingList.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jolawmac\/Dev-Mountian-Bank.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1A6892CFB9C82E1E0280ED7BB5440086B7692F47"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jolawmac\/Shopping-List-.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DA7FE126AEEF1613FFD8AB90CFE3EDD07F12A535"
+    }
+  ]
+}

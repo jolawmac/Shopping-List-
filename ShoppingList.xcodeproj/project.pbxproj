@@ -21,16 +21,16 @@
 
 /* Begin PBXFileReference section */
 		731D3D661E4E168000CF2A6A /* ShoppingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		731D3D691E4E168000CF2A6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		731D3D691E4E168000CF2A6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ShoppingList/AppDelegate.swift; sourceTree = "<group>"; };
 		731D3D6E1E4E168000CF2A6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		731D3D701E4E168000CF2A6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		731D3D701E4E168000CF2A6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ShoppingList/Assets.xcassets; sourceTree = "<group>"; };
 		731D3D731E4E168000CF2A6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		731D3D751E4E168000CF2A6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		731D3D7B1E4E1AC000CF2A6A /* ShoppingListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListTableViewController.swift; sourceTree = "<group>"; };
+		731D3D751E4E168000CF2A6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ShoppingList/Info.plist; sourceTree = "<group>"; };
+		731D3D7B1E4E1AC000CF2A6A /* ShoppingListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShoppingListTableViewController.swift; path = ShoppingList/ShoppingListTableViewController.swift; sourceTree = "<group>"; };
 		731D3D7E1E4E1B1800CF2A6A /* ShoppingList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShoppingList.xcdatamodel; sourceTree = "<group>"; };
-		731D3D801E4E1B8700CF2A6A /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
-		731D3D821E4E1BC900CF2A6A /* ShoppingList+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShoppingList+Convenience.swift"; sourceTree = "<group>"; };
-		731D3D841E4E1C8200CF2A6A /* ShoppingListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListController.swift; sourceTree = "<group>"; };
+		731D3D801E4E1B8700CF2A6A /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stack.swift; path = ShoppingList/Stack.swift; sourceTree = "<group>"; };
+		731D3D821E4E1BC900CF2A6A /* ShoppingList+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ShoppingList+Convenience.swift"; path = "ShoppingList/ShoppingList+Convenience.swift"; sourceTree = "<group>"; };
+		731D3D841E4E1C8200CF2A6A /* ShoppingListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShoppingListController.swift; path = ShoppingList/ShoppingListController.swift; sourceTree = "<group>"; };
 		731D3D8A1E4E1F3A00CF2A6A /* ShoppingListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,9 +48,9 @@
 		731D3D5D1E4E168000CF2A6A = {
 			isa = PBXGroup;
 			children = (
-				731D3D861E4E1C8B00CF2A6A /* Model */,
 				731D3D681E4E168000CF2A6A /* ShoppingList */,
 				731D3D671E4E168000CF2A6A /* Products */,
+				731D3D8C1E4E317400CF2A6A /* Resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,16 +65,10 @@
 		731D3D681E4E168000CF2A6A /* ShoppingList */ = {
 			isa = PBXGroup;
 			children = (
-				731D3D691E4E168000CF2A6A /* AppDelegate.swift */,
-				731D3D6D1E4E168000CF2A6A /* Main.storyboard */,
-				731D3D7B1E4E1AC000CF2A6A /* ShoppingListTableViewController.swift */,
-				731D3D7D1E4E1B1800CF2A6A /* ShoppingList.xcdatamodeld */,
-				731D3D801E4E1B8700CF2A6A /* Stack.swift */,
-				731D3D821E4E1BC900CF2A6A /* ShoppingList+Convenience.swift */,
-				731D3D841E4E1C8200CF2A6A /* ShoppingListController.swift */,
-				731D3D701E4E168000CF2A6A /* Assets.xcassets */,
-				731D3D721E4E168000CF2A6A /* LaunchScreen.storyboard */,
-				731D3D751E4E168000CF2A6A /* Info.plist */,
+				731D3D871E4E1C9800CF2A6A /* Model Controller */,
+				731D3D881E4E1C9F00CF2A6A /* View Controller */,
+				731D3D861E4E1C8B00CF2A6A /* Model */,
+				731D3D891E4E1CA700CF2A6A /* View */,
 			);
 			path = ShoppingList;
 			sourceTree = "<group>";
@@ -82,33 +76,51 @@
 		731D3D861E4E1C8B00CF2A6A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				731D3D881E4E1C9F00CF2A6A /* View Controller */,
-				731D3D871E4E1C9800CF2A6A /* Model Controller */,
+				731D3D7D1E4E1B1800CF2A6A /* ShoppingList.xcdatamodeld */,
+				731D3D821E4E1BC900CF2A6A /* ShoppingList+Convenience.swift */,
+				731D3D801E4E1B8700CF2A6A /* Stack.swift */,
 			);
 			name = Model;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		731D3D871E4E1C9800CF2A6A /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
-				731D3D8A1E4E1F3A00CF2A6A /* ShoppingListTableViewCell.swift */,
+				731D3D841E4E1C8200CF2A6A /* ShoppingListController.swift */,
 			);
 			name = "Model Controller";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		731D3D881E4E1C9F00CF2A6A /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
-				731D3D891E4E1CA700CF2A6A /* View */,
+				731D3D7B1E4E1AC000CF2A6A /* ShoppingListTableViewController.swift */,
+				731D3D8A1E4E1F3A00CF2A6A /* ShoppingListTableViewCell.swift */,
 			);
 			name = "View Controller";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		731D3D891E4E1CA700CF2A6A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				731D3D6D1E4E168000CF2A6A /* Main.storyboard */,
 			);
 			name = View;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		731D3D8C1E4E317400CF2A6A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				731D3D751E4E168000CF2A6A /* Info.plist */,
+				731D3D721E4E168000CF2A6A /* LaunchScreen.storyboard */,
+				731D3D701E4E168000CF2A6A /* Assets.xcassets */,
+				731D3D691E4E168000CF2A6A /* AppDelegate.swift */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +214,7 @@
 				731D3D6E1E4E168000CF2A6A /* Base */,
 			);
 			name = Main.storyboard;
+			path = ShoppingList;
 			sourceTree = "<group>";
 		};
 		731D3D721E4E168000CF2A6A /* LaunchScreen.storyboard */ = {
@@ -210,6 +223,7 @@
 				731D3D731E4E168000CF2A6A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ShoppingList;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -351,6 +365,7 @@
 				731D3D7A1E4E168000CF2A6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
@@ -361,7 +376,8 @@
 				731D3D7E1E4E1B1800CF2A6A /* ShoppingList.xcdatamodel */,
 			);
 			currentVersion = 731D3D7E1E4E1B1800CF2A6A /* ShoppingList.xcdatamodel */;
-			path = ShoppingList.xcdatamodeld;
+			name = ShoppingList.xcdatamodeld;
+			path = ShoppingList/ShoppingList.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
